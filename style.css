@@ -1,0 +1,40 @@
+.category {
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+}
+.sentosa {
+    background-color: blanchedalmond;
+
+
+}
+#gglmap {
+    height: 100%;
+    width: 100%;
+}
+h2 {
+    color: red;
+}
+#lolmao {
+    color: red;
+}
+.jumbotron {
+    background-color: white;
+    color: red;
+    border:5px solid
+}
+.nature-gallery  .nature-gallery-title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card .card-body  .card-title {
+    margin-bottom: 0px;
+}
+
+.card .card-body .card-text {
+    margin-top: 10px;
+    display: none;
+}
+
+.card:hover .card-body .card-text {
+    display: block;
+}
