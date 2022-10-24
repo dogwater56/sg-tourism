@@ -38,3 +38,12 @@ h2 {
 .card:hover .card-body .card-text {
     display: block;
 }
+.malay-anthem-btn {
+    margin-bottom: 10px;
+}
+#collapseExample {
+    border: 2px solid black;
+    background-color: red;
+    margin:0px -5px;
+    padding: 20px 0px 20px 0px
+}

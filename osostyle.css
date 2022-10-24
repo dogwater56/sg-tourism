@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-top: 0px;
+    }
+    .jumbotron .display-4 {
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+}

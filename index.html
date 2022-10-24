@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="osostyle.css">
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -19,15 +20,58 @@
         $('[data-toggle="popover"]').popover()
       })</script>
 
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })</script>
+
 
 
 
     <title>welcome to sg</title>
   </head>
-  <body>
-    <div class="container">
+  <body data-spy="scroll" data-target="#navbar" data-offset="100">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navbar">
+      <img src="./assets/icons/singapore_lion.png" class="d-block w-0.001" alt="..." height="20px" width="20px">
+      <a class="navbar-brand" href="#">Singapore tourism</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav nav-pills">
+          <li class="nav-item active">
+            <a class="nav-link" href="#top_of_page">Top of page <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Landmarks">Landmarks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nature">nature and others</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#singlish">culture and national education</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              stuff i used
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://getbootstrap.com/">bootstrap</a>
+              <a class="dropdown-item" href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+
+    <div class="container" >
       <!--header-->
-      <div class="row my-3 jumbotron" >
+      <div class="row my-3 jumbotron" id="top_of_page" >
         <div class="col-md-9 p-2 text-left">
           <h2 class="display-4">welcome to <span class="badge badge-danger">singapore!</span></h2>
           <h4 id="lolmao">a <span class="badge badge-warning badge-pill">sunny</span> island in southeast asia</h4>
@@ -89,11 +133,11 @@
         </tbody>
       </table>
       <!--carousel-->
-      <div class="row my-3">
+      <div class="row my-3" id="Landmarks">
         <div class="col-md-12 p-2 text-center ">
           <div class="alert alert-info alert-dismissible dade show">
             <button type="button" class="close" data-dismiss="alert"> &times; </button>
-            sheesh bruh can milo forehead gun run errrrrr lim
+            sheesh bruh can milo forehead gun gunny sack run errrrrr lim
           </div>
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -135,7 +179,7 @@
           </div>
         </div>
       </div>
-<!--tourism-->
+      <!--tourism-->
       <div class="row my-3" style="text-align: center;">
         <div class="col-md-4 p-2 text center category">
           <p>attractions</p>
@@ -163,9 +207,8 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.816850220053!2d103.94921645000001!3d1.35405025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da3df8113c9af3%3A0xa1605059a0ca71fb!2sTampines%20East%20MRT%20Station%20(DT33)!5e0!3m2!1sen!2ssg!4v1661593337952!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="gglmap"></iframe>
         </div>
       </div>
-    </div>
 
-<!--nature gallery-->
+    <!--nature gallery-->
     <div class="row py-3" id="nature">
       <div class="col-md-12 nature-gallery">
         <h2 class="nature-gallery-title">Nature gallery</h2>
@@ -201,8 +244,122 @@
         </div>
       </div>
 
+
+    </div>
+
+    <div class="row pb-3" id="national-anthem" >
+      <div class="col-md-12 text-center mb-3 py-1" style="border:1px solid" id="singlish">
+        <h1><a href="#" data-toggle="tooltip" data-placement="top" title="<h4><em>Majulah Singapura</em></h4>" data-html="true">National Anthem</a> Of Singapore</h1>
+
+      </div>
+      <div class="col-md-7 text-center">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#EnglishAnthem" aria-expanded="true" aria-controls="EnglishAnthem">
+                  National Anthem In English
+                </button>
+              </h2>
+            </div>
+        
+            <div id="EnglishAnthem" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Let us, the people of Singapore, together march</p>
+
+                <p>forward towards happiness.</p>
+
+                <p>Our noble aspiration is to see Singapore achieve success.</p>
+
+                <p>Let us unite in a new spirit.</p>
+
+                <p>We all pray:</p>
+
+                <p>May Singapore Progress.</p>
+
+
+
+
+                <p>forward towards happiness.</p>
+
+                <p>Our noble aspiration is to see Singapore achieve success.</p>
+
+                <p>Let us unite in a new spirit.</p>
+
+                <p>We all pray:</p>
+
+                <p>May Singapore Progress.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#chineseanthem" aria-expanded="false" aria-controls="chineseanthem">
+                    National Anthem In Chinese
+                  </button>
+                </h2>
+              </div>
+              <div id="chineseanthem" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>来吧，新家坡人民，
+
+                    让女工工同享福买进；
+                    
+                    女人崇高的丽香，
+                    
+                    姚氏新家坡呈贡。
+                    
+                    来吧，让女人一心一意，
+                    
+                    团结在义气；
+                    
+                    女子七生欢呼：
+                    
+                    千金坝，新家坡！</p>
+
+                  (repeat)
+
+
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  η μαμ
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 text-center">
+        
+        <p>
+          <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            National-Anthem(malay)
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <p>Mari kita rakyat singapura</p>
+          <p>sama-sama menuju bahagia</p>
+          <p>cita-cita kita yang mulia; berjaya singapura</p>
+          <p>marilah kita bersatu: dengan semangat yang baru</p>
+          <p>semua kita bersatu: Dengan semangat yang baru</p>
+          <p>Majulah Singapura! Majulah Singapura!</p>
+          </div>
+        </div>
       </div>
     </div>
-   
+    
+  </div>
   </body>
 </html>
