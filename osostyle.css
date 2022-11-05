@@ -6,4 +6,48 @@
         padding-bottom: 10px;
         font-size: 30px;
     }
+    .jumbotron .badge-danger {
+        font-size: 40px;
+    }
+    .jumbotron h4 {
+        font-size: 30px;
+    }
+    .jumbotron img {
+        display: none
+    }
+    .carousel-inner .carousel-item .img {
+        position:absolute;
+        top:0;
+        left:0;
+        min-width: 100%;
+    }
+    .fa {
+        font-size: 30px;
+    }
+    .carousel-item .carousel-caption {
+        padding-bottom: 3px;
+    }
+    .carousel-item .carousel-caption h1 {
+        font-size: 20px;
+    }
+    .carousel-indicators {
+        position:absolute;
+        bottom: -10px
+    }
+    #icons .btn {
+        margin-bottom: 30px
+    }
+    #other-items h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    #other-items iframe {
+        width: 100%;
+    }
+    #national-anthem h1 {
+        font-size: 30px;
+    }
+    .malay-anthem-btn {
+        margin-top: 20px;
+    }
 }
